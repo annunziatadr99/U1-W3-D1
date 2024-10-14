@@ -73,8 +73,18 @@ console.log(esercizio1);
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
-function numDispari() {}
+function arrayDispari() {
+  const numDispari = [];
+  for (let i = 1; i < 100; i += 2) {
+    numDispari.push(i);
+  }
+  return numDispari;
+}
+const numDispari = arrayDispari();
+console.log(numDispari);
+
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
+
 const movies = [
   {
     Title: "The Lord of the Rings: The Fellowship of the Ring",
